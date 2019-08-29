@@ -1,6 +1,6 @@
 class Logger(object):
     ''' A class for logging information in a program. '''
-
+    print("Test")
     def __init__(self, target=None):
         ''' Initialise the logger with a target. If no target is set, it will log to the console. '''
         self._target = self._to_console if target is None else target
