@@ -1,3 +1,5 @@
+import math
+
 def add(first, second):
     return first + second
 
@@ -41,4 +43,6 @@ def convert_base(num, n, add=0):
    return new_num_string
 def factorial(num):
     """Get the factorial of a number"""
-    
+    current = num
+    result = math.factorial(current)
+    return result
