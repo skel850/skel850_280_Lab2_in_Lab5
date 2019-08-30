@@ -21,7 +21,10 @@ class MathsTest(unittest.TestCase):
         '''Tests the convert_base_over_10 function with a base over 10'''
         self.assertEqual(maths.convert_base(300,2,16),"12C","The convert_base function returned an incorrect value.")
 
-
+    def test_factorial(self):
+        '''Tests the functionality of calculation of the factorial of a number'''
+        self.assertEqual(maths.factorial(8), "8", "The factorial function returned an incorrect value")
+        
 # This allows running the unit tests from the command line (python test_maths.py)
 if __name__ == '__main__':
     unittest.main()

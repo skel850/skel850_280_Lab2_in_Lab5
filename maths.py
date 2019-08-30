@@ -38,4 +38,7 @@ def convert_base(num, n, add=0):
        current = int(current/n)
    if add!=0:
        return convert_base(num,add)#converting to another base
-   return new_num_string
+   return new_num_string
+def factorial(num):
+    """Get the factorial of a number"""
+    
