@@ -5,13 +5,13 @@ class loggerTest(unittest.TestCase):
     
     def test_info(self):
         '''Tests the info function...'''
-        result = ("example.")
-        self.assertEqual(result,'example.',"The test_info function returned an incorrect value")
+        x = logger.Logger()
+        self.assertEqual(x.info("Information"), "[INFO] Information","That is not correct")
     
     def test_error(self):
         '''Tests the error function...'''
-        result = ("example!")
-        self.assertEqual(result,'example!',"The test_error function returned an incorrect value")
+        x = logger.Logger()
+        self.assertEqual(x.error("Error"), "[WARNING] Error","That is not correct")
         
 if __name__ == '__main__':
     unittest.main()
